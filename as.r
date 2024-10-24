@@ -3,7 +3,7 @@
 as = seq.map();
 
 ## 输出对象，最终返回给java
-as.out_data = seq.map('is_mingzhong',false, 'zhikongjine',0 ,'log', '');
+as.out_data = seq.map('is_hit',false, 'zhikongjine',0 ,'log', '');
 
 ## 打印日志
 as.log = fn(&logs) {
@@ -18,8 +18,8 @@ as.output = fn(key,value) {
 };
 
 ## 设置规则是否命中
-sys.mingzhong = fn(is_mingzhong) {
-  sys.out_data.is_mingzhong = is_mingzhong;
+sys.hit = fn(is_hit) {
+  sys.out_data.is_hit = is_hit;
 };
 
 ## 设置质控金额
